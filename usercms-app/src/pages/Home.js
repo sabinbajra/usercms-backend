@@ -37,7 +37,11 @@ const Home = () => {
                             <td>{user.name}</td>
                             <td>{user.username}</td>
                             <td>{user.email}</td>
-                            <td>TO DO something</td>
+                            <td>
+                                <button className='btn btn-primary mx-2'>VIEW</button>
+                                <button className='btn btn-outline-primary mx-2'>EDIT</button>
+                                <button className='btn btn-danger mx-2'>DELETE</button>
+                            </td>
                             </tr>
                         )
 
