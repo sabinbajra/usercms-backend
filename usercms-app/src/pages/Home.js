@@ -45,7 +45,7 @@ const Home = () => {
                             <td>{user.username}</td>
                             <td>{user.email}</td>
                             <td>
-                                <button className='btn btn-primary mx-2'>VIEW</button>
+                                <Link className='btn btn-primary mx-2' to={`/viewuser/${user.id}`}>VIEW</Link>
                                 <Link className='btn btn-outline-primary mx-2' to={`/edituser/${user.id}`}>EDIT</Link>
                                 <button className='btn btn-danger mx-2' onClick={()=>deleteUser(user.id)}>DELETE</button>
                             </td>
