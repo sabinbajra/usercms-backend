@@ -19,7 +19,7 @@ const onInputChange = ((event) => {
 
 const onSubmit =async (event) => {
     event.preventDefault();
-    await axios.post("http://localhost:8080/user",user);
+    await axios.post("http://localhost:8080/users",user);
     navigate('/');
 };
   return (
